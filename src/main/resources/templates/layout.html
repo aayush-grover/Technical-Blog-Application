@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="site-head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header th:fragment="loggedd-out" th:remove="tag">
+    <header>
+        <a href="users/login" th:href="@{users/login}">Login</a>
+        <a href="users/registeration.html" th:href="@{users/registeration}">Login</a>
+    </header>
+</header>
+</body>
+</html>

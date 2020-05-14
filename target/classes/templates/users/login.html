@@ -1,0 +1,20 @@
+<!DOCTYPE html><!--//this is used to tell we are using html5-->
+<html xmlns:th="http://thymeleaf.org"><!-- th is thymeleaf  //this tells that we can now make our code in thymeleaf // xmlns is xml name space-->
+<head>
+    <title>Spring MVC Application</title>
+</head>
+
+
+<body>
+<h2>Please login:</h2>
+
+<form action="/users/login" method="post" th:object="${User}">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" />
+    <label for="password">Username:</label>
+    <input type="password" name="password" id="password" />
+    <input type="submit" value="Login" />
+</form>
+
+</body>
+</html>
